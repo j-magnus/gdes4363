@@ -58,6 +58,57 @@
 
         hr { margin: -1px auto; }
 
+        /*topnav*/
+
+        .navmaster {
+            display: block;
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            height: 45px;
+            z-index: 1;
+            border-bottom: 1px solid black;
+        }
+
+        .topnav {
+            padding-top: 10px;
+        }
+
+        .topnav img {
+            width: 20px;
+            padding-top: 5px;
+            padding-left: 70px;
+        }
+
+        .navpages {
+            width: 100%;
+            padding-left: 70px;
+        }
+
+        .navpages td {
+            width: 25%;
+        }
+
+        .navpages a{
+            transition: padding-left 0.1s
+        }
+        .navpages a:hover{
+            font-style: italic;
+            padding-left: 2px;
+        }
+
+        .bumper {
+            width: 10px;
+            height: 45px;
+            display: block;
+        }
+
+        .imgbump {
+            width: 10px;
+            height: 45px;
+            display: block;
+        }
+
         /*footer*/
         .footer {
             font-size: large;
@@ -126,6 +177,21 @@
                 padding: 0;
                 margin: 0;
             }
+
+            .navpages {
+                padding-top: 5px;
+                border-bottom: 1px solid black;
+            }
+
+            .bumper {
+                width: 10px;
+                height: 80px;
+                display: block;
+            }
+
+            .imgbump {
+                display: none;
+            }
         }
 
         #mydesign:hover {
@@ -150,31 +216,37 @@
 <body>
 <div class="wrapper">
 
+    <div class="container grid navmaster" style="height: 45px; width: 100%;">
+        <div class="item topnav"><a href="JACKMAGNUS.html"><img src="images/home_button-07.png" alt="homebutton"></a></div>
+        <div class="item topnav"><table class="navpages"><tr><td><a href="DESIGN.html">DESIGN</a></td><td><a href="MOTION.html">MOTION</a></td><td><a href="ILLUSTRATION.html">ILLUSTRATION</a></td><td><a href="WRITING.html">WRITING</a></td></tr></table></div>
+    </div>
+
     <div style="background-color: white">
         <div class="blockcontent">
             <div class="container grid" id="bookmark">
                 <div class="item">
-                    <div class="left"><p>Hey&mdash; I'm Jack Magnus!<br><br>I work creatively in:<br> <a href="DESIGN.html">design&#8594;</a><br><a href="MOTION.html">motion&#8594;</a><br>illustration&#8594;<br>+ writing&#8594;<br><br>My drive is to create work that exists beyond marginal, exhausted, and majority represented ideas.<br><br><a href="images/magnus_resume.pdf" target="_blank">Resume&#8599;</a>
+                    <div class="bumper"></div>
+                    <div class="left"><p>Hey&mdash; I'm Jack Magnus!<br><br>I work creatively in <a href="DESIGN.html">design,</a> <a href="MOTION.html">motion,</a> <a href="ILLUSTRATION.html">illustration,</a> and <a href="WRITING.html">writing</a>.<br><br>My drive is to create work that exists beyond marginal, exhausted, and majority represented ideas.<br><br><a href="images/magnus_resume.pdf" target="_blank">Resume&#8599;</a>
                     </p>
                     </div>
                 </div>
 
                 <div class="item">
-
+                    <div class="imgbump"></div>
                     <div class="picbox" style="padding-top: 0;">
                         <a id="mydesign" href="DESIGN.html"><img src="images/NGN_1.png" class="biopic" alt="design"></a>
                     </div>
 
                     <div class="picbox">
-                        <a id="mymotion" href="MOTION.html"><img src="images/screen3.png" class="biopic" alt="motion"></a>
+                        <a id="mymotion" href="MOTION.html"><img src="images/screen1.png" class="biopic" alt="motion"></a>
                     </div>
 
                     <div class="picbox">
-                        <a id="myillustration" href="ILLUSTRATION.html"><img src="images/screen2.png" class="biopic" id="classsssss" alt="illustration"></a>
+                        <a id="myillustration" href="ILLUSTRATION.html"><img src="images/screen2.png" class="biopic" alt="illustration"></a>
                     </div>
 
                     <div class="picbox">
-                        <a id="mywriting" href="WRITING.html"> <img src="images/screen1.png" class="biopic" alt="motion"></a>
+                        <a id="mywriting" href="WRITING.html"> <img src="images/screen3.png" class="biopic" alt="motion"></a>
                     </div>
 
                 </div>
